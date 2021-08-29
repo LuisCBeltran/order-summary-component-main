@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card-container {
+  width: 375px;
+  height: 709px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e8ff;
+  background-image: url("/images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+}
+.card-container .card {
+  max-width: 327px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card img {
+  width: 100%;
+}
+.card-container .card h1 {
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 30px;
+  color: #1f2f56;
+}
+.card-container .card p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #7280a7;
+  line-height: 25px;
+  margin-top: 15px;
+}
+.card-container .card .plan {
+  height: 81px;
+  width: 279px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 11px;
+  margin-top: 25px;
+}
+.card-container .card .plan .elements-container {
+  height: 48px;
+  width: 247px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card .plan .elements-container .music-image {
+  width: 68px;
+}
+.card-container .card .plan .elements-container .music-image img {
+  width: 48px;
+}
+.card-container .card .plan .elements-container .plan__text {
+  width: 81px;
+  height: 40px;
+  text-align: center;
+}
+.card-container .card .plan .elements-container .plan__text .annual-plan {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 18.52px;
+  margin-bottom: 5px;
+  color: #1f2f56;
+}
+.card-container .card .plan .elements-container .plan__text p {
+  font-size: 14px;
+  line-height: 18.52px;
+  margin: 0;
+}
+.card-container .card .plan .elements-container .change {
+  display: block;
+  width: 98px;
+  display: flex;
+  justify-content: flex-end;
+}
+.card-container .card .plan .elements-container .change a {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 17.2px;
+  color: #3829e0;
+}
+.card-container .card .button-proceed {
+  width: 279px;
+  height: 50px;
+  margin-top: 25px;
+  background-color: #3829e0;
+  border: 0;
+  border-radius: 11px;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+}
+.card-container .card .button-cancel {
+  width: 279px;
+  height: 50px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border: 0;
+  background-color: transparent;
+  color: #7280a7;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}/*# sourceMappingURL=style.css.map */
