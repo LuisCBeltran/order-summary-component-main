@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/solution.jpg)
+![](./images/solution.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/LuisCBeltran/order-summary-component-main)
-- Live Site URL: [Add live site URL here](https://luiscbeltran.github.io/order-summary-component-main/)
+- Solution URL: [Order summary card](https://github.com/LuisCBeltran/order-summary-component-main)
+- Live Site URL: [Order summary card](https://luiscbeltran.github.io/order-summary-component-main/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I have put in practice what I have learned about Pug, Sass and responsive design.
+In this project, I have put in practice what I have learned about Pug, Sass and responsive design. I also learned how to use @use and @forward in Sass.
 
 ### Continued development
 
