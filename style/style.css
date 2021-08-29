@@ -16,21 +16,16 @@ body {
 }
 
 .card-container {
-  width: 375px;
-  height: 709px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #e0e8ff;
-  background-image: url("../images/pattern-background-mobile.svg");
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
-}
-@media only screen and (min-width: 1440px) {
-  .card-container {
-    width: 1440px;
-    height: 900px;
-    background-image: url("../images/pattern-background-desktop.svg");
-  }
 }
 .card-container .card {
   width: 327px;
@@ -223,4 +218,8 @@ body {
     margin-top: 15px;
     margin-bottom: 33px;
   }
+}
+.card-container .attribution {
+  margin-top: 30px;
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */
