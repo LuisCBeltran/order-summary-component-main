@@ -25,8 +25,15 @@ body {
   background-image: url("/images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
 }
+@media only screen and (min-width: 1440px) {
+  .card-container {
+    width: 1440px;
+    height: 900px;
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+}
 .card-container .card {
-  max-width: 327px;
+  width: 327px;
   border-radius: 20px;
   overflow: hidden;
   background-color: white;
@@ -36,6 +43,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card {
+    width: 450px;
+  }
 }
 .card-container .card img {
   width: 100%;
@@ -47,13 +59,27 @@ body {
   margin-top: 30px;
   color: #1f2f56;
 }
-.card-container .card p {
+@media only screen and (min-width: 1440px) {
+  .card-container .card h1 {
+    font-size: 28px;
+    margin-top: 40px;
+  }
+}
+.card-container .card .description {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
   color: #7280a7;
   line-height: 25px;
   margin-top: 15px;
+  width: 263px;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card .description {
+    font-size: 16px;
+    line-height: 26px;
+    width: 354px;
+  }
 }
 .card-container .card .plan {
   height: 81px;
@@ -65,12 +91,23 @@ body {
   border-radius: 11px;
   margin-top: 25px;
 }
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan {
+    width: 354px;
+    height: 98px;
+  }
+}
 .card-container .card .plan .elements-container {
   height: 48px;
   width: 247px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan .elements-container {
+    width: 306px;
+  }
 }
 .card-container .card .plan .elements-container .music-image {
   width: 68px;
@@ -83,6 +120,12 @@ body {
   height: 40px;
   text-align: center;
 }
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan .elements-container .plan__text {
+    width: 92px;
+    height: 48px;
+  }
+}
 .card-container .card .plan .elements-container .plan__text .annual-plan {
   font-size: 14px;
   font-weight: 900;
@@ -90,10 +133,22 @@ body {
   margin-bottom: 5px;
   color: #1f2f56;
 }
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan .elements-container .plan__text .annual-plan {
+    font-size: 16px;
+    line-height: 21.17px;
+  }
+}
 .card-container .card .plan .elements-container .plan__text p {
   font-size: 14px;
   line-height: 18.52px;
   margin: 0;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan .elements-container .plan__text p {
+    font-size: 16px;
+    line-height: 21.17px;
+  }
 }
 .card-container .card .plan .elements-container .change {
   display: block;
@@ -101,11 +156,27 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan .elements-container .change {
+    width: 146px;
+  }
+}
 .card-container .card .plan .elements-container .change a {
   font-size: 13px;
   font-weight: 700;
   line-height: 17.2px;
   color: #3829e0;
+}
+.card-container .card .plan .elements-container .change a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #766CF1;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card .plan .elements-container .change a {
+    font-size: 14px;
+    line-height: 18.52px;
+  }
 }
 .card-container .card .button-proceed {
   width: 279px;
@@ -120,6 +191,16 @@ body {
   font-weight: 700;
   color: white;
 }
+.card-container .card .button-proceed:hover {
+  background-color: #766CF1;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card .button-proceed {
+    width: 354px;
+    margin-top: 30px;
+  }
+}
 .card-container .card .button-cancel {
   width: 279px;
   height: 50px;
@@ -131,4 +212,15 @@ body {
   font-size: 15px;
   font-weight: 700;
   font-style: normal;
+}
+.card-container .card .button-cancel:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1440px) {
+  .card-container .card .button-cancel {
+    width: 354px;
+    margin-top: 15px;
+    margin-bottom: 33px;
+  }
 }/*# sourceMappingURL=style.css.map */

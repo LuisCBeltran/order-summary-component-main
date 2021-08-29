@@ -9,8 +9,13 @@
     background-color: v.$pale-blue;
     background-image: url('/images/pattern-background-mobile.svg');
     background-repeat: no-repeat;
+    @media only screen and (min-width: 1440px) {
+        width: 1440px;
+        height: 900px;
+        background-image: url('/images/pattern-background-desktop.svg');
+    }
     .card {
-        max-width: 327px;
+        width: 327px;
         border-radius: 20px;
         overflow: hidden;
         background-color: white;
@@ -20,6 +25,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media only screen and (min-width: 1440px) {
+            width: 450px;
+        }
         img {
             width: 100%;
         }
@@ -29,14 +37,24 @@
             text-align: center;
             margin-top: 30px;
             color: v.$dark-blue;
+            @media only screen and (min-width: 1440px) {
+                font-size: 28px;
+                margin-top: 40px;
+            }
         }
-        p {
+        .description {
             text-align: center;
             font-size: 15px;
             font-weight: 500;
             color: v.$desaturated-blue;
             line-height: 25px;
             margin-top: 15px;
+            width: 263px;
+            @media only screen and (min-width: 1440px) {
+                font-size: 16px;
+                line-height: 26px;
+                width: 354px;
+            }
         }
         .plan {
             height: 81px;
@@ -47,12 +65,19 @@
             background-color: v.$very-pale-blue;
             border-radius: 11px;
             margin-top: 25px;
+            @media only screen and (min-width: 1440px) {
+                width: 354px;
+                height: 98px;
+            }
             .elements-container {
                 height: 48px;
                 width: 247px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @media only screen and (min-width: 1440px) {
+                    width: 306px;
+                }
                 .music-image {
                     width: 68px;
                     img {
@@ -63,17 +88,29 @@
                     width: 81px;
                     height: 40px;
                     text-align: center;
+                    @media only screen and (min-width: 1440px) {
+                        width: 92px;
+                        height: 48px;
+                    }
                     .annual-plan {
                         font-size: 14px;
                         font-weight: 900;
                         line-height: 18.52px;
                         margin-bottom: 5px;
                         color: v.$dark-blue;
+                        @media only screen and (min-width: 1440px) {
+                            font-size: 16px;
+                            line-height: 21.17px;
+                        }
                     }
                     p {
                         font-size: 14px;
                         line-height: 18.52px;
                         margin: 0;
+                        @media only screen and (min-width: 1440px) {
+                            font-size: 16px;
+                            line-height: 21.17px;
+                        }
                     }
                 }
                 .change {
@@ -81,11 +118,23 @@
                     width: 98px;
                     display: flex;
                     justify-content: flex-end;
+                    @media only screen and (min-width: 1440px) {
+                        width: 146px;
+                    }
                     a {
                         font-size: 13px;
                         font-weight: 700;
                         line-height: 17.2px;
                         color: v.$bright-blue;
+                        &:hover {
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: #766CF1;
+                        }
+                        @media only screen and (min-width: 1440px) {
+                            font-size: 14px;
+                            line-height: 18.52px;
+                        }
                     }
                 }
             }
@@ -102,6 +151,14 @@
             font-style: normal;
             font-weight: 700;
             color: white;
+            &:hover {
+                background-color: #766CF1;
+                cursor: pointer;
+            }
+            @media only screen and (min-width: 1440px) {
+                width: 354px;
+                margin-top: 30px;
+            }
         }
         .button-cancel {
             width: 279px;
@@ -114,6 +171,15 @@
             font-size: 15px;
             font-weight: 700;
             font-style: normal;
+            &:hover {
+                color: v.$dark-blue;
+                cursor: pointer;
+            }
+            @media only screen and (min-width: 1440px) {
+                width: 354px;
+                margin-top: 15px;
+                margin-bottom: 33px;
+            }
         }
     }
 }
